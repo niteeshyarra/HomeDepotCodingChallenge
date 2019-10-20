@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+  
+<br/>
+<br/>
+<div >
+    <h1 style="text-align:center">Ohms Value Calculator</h1>
+    <br />
+    <br />
+    <form>
+        <div style="text-align:center" class="container">
+            <div class="col-md-3">
+                <label>Band 1</label>
+                <select id="band1" name="band1">
+                    <option value="0">0 Black</option>
+                    <option value="1">1 Brown</option>
+                    <option value="2">2 Red</option>
+                    <option value="3">3 Orange</option>
+                    <option value="4">4 Yellow</option>
+                    <option value="5">5 Green</option>
+                    <option value="6">6 Blue</option>
+                    <option value="7">7 Voilet</option>
+                    <option value="8">8 Grey</option>
+                    <option value="9">9 White</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Band 2</label>
+                <select id="band2" name="band2">
+                    <option value="0">0 Black</option>
+                    <option value="1">1 Brown</option>
+                    <option value="2">2 Red</option>
+                    <option value="3">3 Orange</option>
+                    <option value="4">4 Yellow</option>
+                    <option value="5">5 Green</option>
+                    <option value="6">6 Blue</option>
+                    <option value="7">7 Voilet</option>
+                    <option value="8">8 Grey</option>
+                    <option value="9">9 White</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Multiplier</label>
+                <select id="multiplier" name="multiplier" class="selectpicker">
+                    <option value="1">x1 Black</option>
+                    <option value="10">x10 Brown</option>
+                    <option value="100">x100 Red</option>
+                    <option value="1000">x1K Orange</option>
+                    <option value="10000">x10K Yellow</option>
+                    <option value="100000">x100K Green</option>
+                    <option value="1000000">x1M Blue</option>
+                    <option value="10000000">x10M Voilet</option>
+                    <option value="100000000">x100M Grey</option>
+                    <option value="1000000000">x1G White</option>
+                    <option value="0.1">x0.1 Gold</option>
+                    <option value="0.01">x0.01 Silver</option>
+                    <option value="0.001">x0.001 Pink</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Tolerance</label>
+                <select id="tolerance" name="tolerance">
+                    <option value="1">±1% Brown</option>
+                    <option value="2">±2% Red</option>
+                    <option value="0.05">±0.05% Orange</option>
+                    <option value="0.02">±0.02% Yellow</option>
+                    <option value="0.5">±0.5% Green</option>
+                    <option value="0.25">±0.25% Blue</option>
+                    <option value="0.10">±0.10% Voilet</option>
+                    <option value="0.01">±0.01% Grey</option>
+                    <option value="5">±5% Gold</option>
+                    <option value="10">±10% Silver</option>
+                    <option value="20">±20% None</option>
+                </select>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div style="text-align:center">
+            <input class="btn btn-primary" type="button" value="Calculate" id="postValues" />
+        </div>        
+    </form> 
+    <br/>
+    <div style="text-align:center" class="result">
+        <label>Result:</label>
+        <input type="text" readonly />
+    </div>
+</div>
+
+
